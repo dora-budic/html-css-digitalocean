@@ -96,7 +96,7 @@ body {
 
 #jumbtron .jumbtron-text p {
   color: #BBCDFF;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 #jumbtron .form {
@@ -200,6 +200,43 @@ body {
   color: #1633ff;
 }
 
+/* PROCESS SECTION*/
+#process {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#process h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+#process p {
+  color: #031b4e;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+#process button {
+  display: block;
+  background-color: #fff;
+  border: none;
+  outline: 0;
+  font-size: 20px;
+  color: #75809A;
+  padding: 10px 10px;
+  border-left: 3px solid #e5e8ed;
+}
+
+#process button.active {
+  border-left: 3px solid #0069ff;
+}
+
+#process button:focus {
+  border-left: 3px solid #0069ff;
+  transition: 0.8s ease 0s;
+}
+
 
 @media all and (min-width: 768px) and (max-width: 991px) {
   .navbar-toggle {
@@ -236,6 +273,11 @@ body {
 
   #logos h4 {
     font-size: 18px;
+  }
+
+  #process p {
+    color: #5C6A88;
+    font-size: 22px;
   }
 }
 
