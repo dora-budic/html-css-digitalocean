@@ -6,6 +6,35 @@ body {
 .ml-40 {
   margin-left: 40px;
 }
+
+.bg-white {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.color-lb {
+  color: #006AFF;
+}
+
+.color-db {
+  color: #031C4E;
+}
+
+.btn-account {
+  background-color: #579AFF;
+  color: #fff;
+  border-radius: 5px;
+  padding: 8px;
+  border: none;
+}
+
+.btn-google {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 8px;
+  border: none;
+  box-shadow: 2px 2px 5px #E3E3E3;
+}
 /* UTILITY */
 
 .navbar-default {
@@ -13,6 +42,7 @@ body {
   padding-bottom: 5px;
   border: 0;
   background-color: #fff;
+  margin-bottom: 0;
 }
 
 .navbar-brand {
@@ -30,31 +60,147 @@ body {
 
 .nav.navbar-nav > li > a {
   color: #031b4f;
-  font-size: 16px;
-}
-
-.navbar-nav > li > a > i {
   font-size: 14px;
 }
 
-.my-btn {
-  border: 1px solid #006AFF;
-  padding: 5px 10px;
-  border-radius: 5px;
+.nav.navbar-nav > li:hover a {
+  color: #006AFF;
 }
 
-@media all and (min-width: 768px;) and (max-width: 991px) {
+.navbar-default .navbar-toggle .icon-bar {
+  background-color: #006AFF;
+  height: 3px;
+  width: 20px;
+}
+
+.navbar-default .navbar-toggle {
+  border-color: #fff;
+}
+
+#jumbtron {
+  background-image: url("./img/bg-sea.svg");
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#jumbtron .jumbtron-text h1 {
+  color: #fff;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+#jumbtron .jumbtron-text p {
+  color: #BBCDFF;
+  font-size: 28px;
+}
+
+#jumbtron .form {
+  padding: 30px 15px;
+}
+
+#jumbtron .form h2 {
+  font-weight: bold;
+}
+
+::placeholder {
+  color: #031b4e;
+  font-size: 16px;
+
+}
+#jumbtron .form input {
+  width: 100%;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #e5e8ed;
+  outline: 0;
+}
+
+#jumbtron .form .btn-account, #jumbtron .form .btn-google {
+  width: 100%;
+  margin-bottom: 5px;
+  outline: 0;
+  font-weight: bold;
+}
+
+#jumbtron .form .btn-account:hover {
+  background-color: #1633ff;
+  transition: all 0.3s ease 0s;
+}
+
+#jumbtron .form .btn-google {
+  position: relative;
+  color: #6B6B6B;
+}
+
+#jumbtron .form .btn-google:hover {
+  color: #0069ff;
+}
+
+#jumbtron .form .btn-google img {
+  width: 20px;
+  position: absolute;
+  left: 15px;
+}
+
+#jumbtron form {
+  margin-bottom: 10px;
+}
+
+#jumbtron span a {
+  text-decoration: underline;
+}
+
+
+@media all and (min-width: 768px) and (max-width: 991px) {
   .navbar-toggle {
     display: block;
+    margin-right: 0;
   }
 
-  .navbar-nav, .navbar-right {
+  .navbar-collapse ul {
     display: none;
+  }
+
+  .navbar-header {
+    width: 100%;
   }
 }
 
-@media all and (min-width: 992px;) {
+@media all and (min-width: 768px) {
+  #jumbtron .jumbtron-text p {
+    font-size: 22px;
+  }
+
+  #jumbtron .jumbtron-text h1 {
+    font-size: 35px;
+  }
+
+  #jumbtron .form h2 {
+    font-size: 26px;
+  }
+}
+
+@media all and (min-width: 992px) {
   .navbar-nav > li > a {
-    padding-left: 5px;
+    padding: 15px 10px;
+  }
+
+  .navbar-nav > li > a.my-btn {
+    border: 1px solid #006AFF;
+    border-radius: 5px;
+    padding: 5px 15px;
+    margin-top: 8px;
+    color: #006AFF;
+  }
+
+  .navbar-nav > li > a.my-btn:hover {
+    border: 1px solid #006AFF;
+    background-color: #006AFF;
+    color: #fff;
+    transition: background-color 0.25s linear, color 0.25s linear;
   }
 }
