@@ -37,6 +37,7 @@ body {
 }
 /* UTILITY */
 
+/* NAVBAR */
 .navbar-default {
   padding-top: 5px;
   padding-bottom: 5px;
@@ -77,6 +78,7 @@ body {
   border-color: #fff;
 }
 
+/* JUMBTRON */
 #jumbtron {
   background-image: url("./img/bg-sea.svg");
   padding-top: 50px;
@@ -154,6 +156,50 @@ body {
   text-decoration: underline;
 }
 
+/* LOGOS */
+#logos {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: #F3F5F9
+}
+
+#logos h4 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 22px;
+  color: #5b6987;
+}
+
+#logos {
+  font-size: 0;
+}
+
+#logos .logo {
+  width: 50%;
+  padding: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+#logos .logo img {
+  width: 100%;
+}
+
+#logos a {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#logos a:after {
+  content: ' \02C3';
+  margin-left: 10px;
+}
+
+#logos a:hover {
+  color: #1633ff;
+}
+
 
 @media all and (min-width: 768px) and (max-width: 991px) {
   .navbar-toggle {
@@ -180,7 +226,16 @@ body {
   }
 
   #jumbtron .form h2 {
-    font-size: 26px;
+    font-size: 25px;
+  }
+
+  #logos .logo {
+    width: calc(100% / 6);
+    padding: 10px;
+  }
+
+  #logos h4 {
+    font-size: 18px;
   }
 }
 
@@ -202,5 +257,13 @@ body {
     background-color: #006AFF;
     color: #fff;
     transition: background-color 0.25s linear, color 0.25s linear;
+  }
+
+  #jumbtron .jumbtron-text h1 {
+    font-size: 50px;
+  }
+
+  #jumbtron .jumbtron-text p {
+    font-size: 18px;
   }
 }
