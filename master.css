@@ -7,6 +7,10 @@ body {
   margin-left: 40px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .bg-white {
   background-color: #fff;
   border-radius: 10px;
@@ -22,6 +26,10 @@ body {
 
 .color-db {
   color: #031C4E;
+}
+
+.color-w {
+  color: #fff;
 }
 
 .btn-account {
@@ -54,6 +62,19 @@ body {
 .ptb-50 {
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.ptb-10 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.pad-10 {
+  padding: 10px 10px;
+}
+
+.border-b {
+  border-bottom: 1px solid #fff;
 }
 /* UTILITY */
 
@@ -304,6 +325,7 @@ body {
   background-color: transparent;
 }
 
+/* FEATURES SECTION */
 #features .card {
   margin-top: 30px;
 }
@@ -321,6 +343,52 @@ body {
 #features .card a:hover {
   color: #1633ff;
 }
+
+/* REGIONS SECTION */
+#regions {
+  background-color: #0046C4;
+}
+
+#regions ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#regions ul > li {
+  padding: 10px 10px;
+  border-bottom: 1px solid #fff;
+}
+
+#regions ul > li > .code {
+  color: #fff;
+  text-transform: uppercase;
+  display: inline-block;
+  width: calc(100% / 12 * 2);
+}
+
+#regions ul > li:last-child {
+  border-bottom: none;
+}
+
+#regions ul > li > .region {
+  color: #BBCDFF
+}
+
+#regions ul > li > a {
+  color: #00d7d2;
+  text-decoration: none;
+  float: right;
+}
+
+#regions ul > li > a:after {
+  content: ' \02C3';
+  margin-left: 5px;
+}
+
+#regions ul > li > a:hover {
+  color: #031C4E;
+}
+
 
 @media all and (min-width: 768px) and (max-width: 991px) {
   .navbar-toggle {
