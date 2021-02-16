@@ -217,24 +217,38 @@ body {
   margin-bottom: 50px;
 }
 
-#process button {
-  display: block;
-  background-color: #fff;
-  border: none;
-  outline: 0;
+#process ul {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+#process ul > li {
   font-size: 20px;
   color: #75809A;
   padding: 10px 10px;
   border-left: 3px solid #e5e8ed;
-}
-
-#process button.active {
-  border-left: 3px solid #0069ff;
-}
-
-#process button:focus {
-  border-left: 3px solid #0069ff;
+  outline: 0;
   transition: 0.8s ease 0s;
+}
+
+#process ul > li > a {
+  text-decoration: none;
+  outline: 0;
+}
+
+#process ul > li:hover, #process ul > li:active, #process ul > li:focus,  #process ul > li:target {
+  border-left: 3px solid #0069ff;
+}
+
+#process .card h5 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+#process .card p {
+  font-size: 16px;
+  color: #75809A;
 }
 
 
