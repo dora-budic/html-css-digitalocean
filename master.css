@@ -12,6 +12,10 @@ body {
   border-radius: 10px;
 }
 
+.bg-grey {
+  background-color: #F3F5F9
+}
+
 .color-lb {
   color: #006AFF;
 }
@@ -34,6 +38,22 @@ body {
   padding: 8px;
   border: none;
   box-shadow: 2px 2px 5px #E3E3E3;
+}
+
+.font-h2 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.font-p {
+  color: #031b4e;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.ptb-50 {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 /* UTILITY */
 
@@ -81,8 +101,6 @@ body {
 /* JUMBTRON */
 #jumbtron {
   background-image: url("./img/bg-sea.svg");
-  padding-top: 50px;
-  padding-bottom: 50px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -157,12 +175,6 @@ body {
 }
 
 /* LOGOS */
-#logos {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  background-color: #F3F5F9
-}
-
 #logos h4 {
   text-transform: uppercase;
   font-weight: bold;
@@ -201,25 +213,10 @@ body {
 }
 
 /* PROCESS SECTION*/
-#process {
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
-#process h2 {
-  font-size: 36px;
-  font-weight: bold;
-}
-
-#process p {
-  color: #031b4e;
-  font-size: 24px;
-  margin-bottom: 50px;
-}
-
 #process ul {
   list-style: none;
   margin-bottom: 30px;
+  padding: 0;
 }
 
 #process ul > li {
@@ -251,6 +248,61 @@ body {
   color: #75809A;
 }
 
+/* DESIGN SECTION */
+#design .slide {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+
+#design img {
+  width: 84%;
+}
+
+#design i {
+  display: none;
+  font-size: 46px;
+  vertical-align: middle;
+  color: #6F7B97;
+}
+
+#design i.fa-angle-left {
+  margin-right: 10px;
+}
+
+#design i.fa-angle-right {
+  color: #031C4E;
+  margin-left: 10px;
+}
+
+#design span {
+  display: block;
+  font-size: 16px;
+  width: 84%;
+  margin: 0 auto;
+  color: #031C4E;
+}
+
+#design .dots {
+  margin-top: 50px;
+}
+
+#design button {
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+  padding: 3px;
+  outline: 0;
+  background-color: transparent;
+  border: 1px solid #0069ff;
+}
+
+#design button.active, #design button:focus {
+  background-color: #0069ff;
+}
+
+#design button:focus button.active {
+  background-color: transparent;
+}
 
 @media all and (min-width: 768px) and (max-width: 991px) {
   .navbar-toggle {
@@ -293,6 +345,10 @@ body {
     color: #5C6A88;
     font-size: 22px;
   }
+
+  #design i {
+    display: inline-block;
+  }
 }
 
 @media all and (min-width: 992px) {
@@ -321,5 +377,9 @@ body {
 
   #jumbtron .jumbtron-text p {
     font-size: 18px;
+  }
+
+  #design .dots {
+    margin-top: 10px;
   }
 }
