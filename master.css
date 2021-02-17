@@ -521,6 +521,53 @@ footer ul > li > a:hover {
   color: #fff;
 }
 
+footer .chat-icon {
+  position: fixed;
+  bottom: 140px;
+  left: 40px;
+  filter: drop-shadow(0 0 7px #031C4E);
+}
+
+footer .chat-icon img {
+  width: 60px;
+  border-radius: 5px;
+}
+
+footer .chat-icon span {
+  color: #fff;
+  font-size: 12px;
+  background-color: #FF0001;
+  border: 4px solid #fff;
+  border-radius: 100%;
+  padding: 2px 8px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(30%, -40%);
+}
+
+footer .chat-box {
+  font-weight: bold;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 15px 10px;
+  color: #031C4E;
+  position: fixed;
+  bottom: 50px;
+  left: 40px;
+  width: 360px;
+  filter: drop-shadow(0 0 7px #031C4E);
+}
+
+footer .chat-box i {
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  transform: translateX(80%);
+}
+
 @media all and (min-width: 768px) and (max-width: 991px) {
   .navbar-toggle {
     display: block;
@@ -606,5 +653,15 @@ footer ul > li > a:hover {
 
   footer ul > li > a {
     font-size: 14px;
+  }
+
+  footer .chat-icon {
+    bottom: 50px;
+    left: calc(100% - 100px);
+  }
+
+  footer .chat-box {
+    bottom: 50px;
+    left: calc(100% - 480px)
   }
 }
