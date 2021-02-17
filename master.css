@@ -11,6 +11,10 @@ body {
   margin-bottom: 30px;
 }
 
+.bg-blue {
+  background-color: #0046C4;
+}
+
 .bg-white {
   background-color: #fff;
   border-radius: 10px;
@@ -67,6 +71,10 @@ body {
 .ptb-10 {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+.border-b {
+  border-bottom: 1px solid #fff;
 }
 /* UTILITY */
 
@@ -202,27 +210,28 @@ body {
 
 #logos .logo {
   width: 50%;
-  padding: 20px;
+  padding: 10px;
   display: inline-block;
   vertical-align: middle;
+  text-align: center;
 }
 
 #logos .logo img {
   width: 100%;
 }
 
-#logos a {
+#logos a.stories {
   font-size: 16px;
   text-decoration: none;
   font-weight: bold;
 }
 
-#logos a:after {
+#logos a.stories:after {
   content: ' \02C3';
   margin-left: 10px;
 }
 
-#logos a:hover {
+#logos a.stories:hover {
   color: #1633ff;
 }
 
@@ -268,11 +277,10 @@ body {
   vertical-align: middle;
   margin: 50px 10px 15px 10px;
   display: inline-block;
-  width: 80%;
 }
 
 #design img {
-  width: 100%;
+  max-width: 100%;
   margin-bottom: 10px;
 }
 
@@ -334,58 +342,49 @@ body {
 }
 
 /* REGIONS SECTION */
-#regions {
-  background-color: #0046C4;
+#regions .grid-table {
+  padding: 0 15px;
+  font-size: 12px;
 }
 
-#regions ul {
-  list-style: none;
-  padding-left: 0;
-}
-
-#regions ul > li {
-  padding: 10px 10px;
-  border-bottom: 1px solid #fff;
-}
-
-#regions ul > li > .code {
-  color: #fff;
+#regions .grid-table .code {
   text-transform: uppercase;
-  display: inline-block;
-  width: calc(100% / 12 * 2);
 }
 
-#regions ul > li:last-child {
-  border-bottom: none;
-}
-
-#regions ul > li > .region {
+#regions .grid-table .region {
   color: #BBCDFF
 }
 
-#regions ul > li > a {
+#regions .grid-table a {
   color: #00d7d2;
   text-decoration: none;
-  float: right;
 }
 
-#regions ul > li > a:after {
+#regions .grid-table a:after {
   content: ' \02C3';
   margin-left: 5px;
 }
 
-#regions ul > li > a:hover {
+#regions .grid-table a:hover {
   color: #031C4E;
 }
 
 /* STORIES SECTION */
+#stories h2 {
+  margin-bottom: 60px;
+}
+
 #stories .slide {
   background-color: #fff;
-  margin: 50px 10px 15px 10px;
+  margin: 0 10px;
   border-radius: 5px;
   display: inline-block;
   width: 80%;
   vertical-align: middle;
+}
+
+#stories .slide img {
+  max-width: 100%;
 }
 
 #stories i {
@@ -455,6 +454,21 @@ body {
   background-color: transparent;
 }
 
+/* ACCOUNT SECTION */
+#account a {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  color: #006AFF;
+  text-decoration: none;
+  font-size: 16px;
+  transition: all 0.3s ease 0s;
+}
+
+#account a:hover {
+  background-color: rgba(225, 225, 225, 0.9);
+}
+
 
 @media all and (min-width: 768px) and (max-width: 991px) {
   .navbar-toggle {
@@ -486,7 +500,7 @@ body {
 
   #logos .logo {
     width: calc(100% / 6);
-    padding: 10px;
+    padding: 5px;
   }
 
   #logos h4 {
