@@ -3,10 +3,6 @@ body {
 }
 
 /* UTILITY */
-.ml-40 {
-  margin-left: 40px;
-}
-
 .mb-30 {
   margin-bottom: 30px;
 }
@@ -63,7 +59,7 @@ body {
 
 .font-p {
   color: #031b4e;
-  font-size: 24px;
+  font-size: 21px;
   margin-bottom: 50px;
 }
 
@@ -262,6 +258,10 @@ body {
 
 #process ul > li:hover, #process ul > li:active, #process ul > li:focus,  #process ul > li:target {
   border-left: 3px solid #0069ff;
+}
+
+#process .card {
+  margin-bottom: 20px;
 }
 
 .card h5 {
@@ -476,7 +476,7 @@ body {
 /* FOOTER */
 footer {
   background-color: #031C4E;
-  font-size: 15px;
+  font-size: 13px;
 }
 
 footer .copyright {
@@ -491,7 +491,17 @@ footer .copyright p span:last-child {
   color: #536282;
 }
 
-footer .copyright .social i {
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer .copyright .social a {
   font-size: 20px;
   margin: 0 5px;
 }
@@ -511,21 +521,17 @@ footer ul > li {
   margin: 10px 0;
 }
 
-footer ul > li > a {
-  text-decoration: none;
-  color: inherit;
-}
-
-footer ul > li > a:hover {
-  text-decoration: none;
-  color: #fff;
+footer button {
+  border: none;
+  padding: 0;
+  outline: 0;
 }
 
 footer .chat-icon {
   position: fixed;
-  bottom: 140px;
+  bottom: 130px;
   left: 40px;
-  filter: drop-shadow(0 0 7px #031C4E);
+  filter: drop-shadow(0 0 4px #031C4E);
 }
 
 footer .chat-icon img {
@@ -555,8 +561,8 @@ footer .chat-box {
   position: fixed;
   bottom: 50px;
   left: 40px;
-  width: 360px;
-  filter: drop-shadow(0 0 7px #031C4E);
+  width: 300px;
+  filter: drop-shadow(0 0 4px #031C4E);
 }
 
 footer .chat-box i {
@@ -605,17 +611,16 @@ footer .chat-box i {
     font-size: 18px;
   }
 
-  #process p {
-    color: #5C6A88;
-    font-size: 22px;
-  }
-
   #design i, #stories i {
     display: inline-block;
   }
 }
 
 @media all and (min-width: 992px) {
+  .navbar-nav {
+    margin-left: 40px;
+  }
+
   .navbar-nav > li > a {
     padding: 15px 10px;
   }
@@ -647,10 +652,6 @@ footer .chat-box i {
     margin-top: 10px;
   }
 
-  footer p span {
-    font-size: 13px;
-  }
-
   footer ul > li > a {
     font-size: 14px;
   }
@@ -662,6 +663,6 @@ footer .chat-box i {
 
   footer .chat-box {
     bottom: 50px;
-    left: calc(100% - 480px)
+    left: calc(100% - 420px)
   }
 }
